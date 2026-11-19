@@ -1,0 +1,33 @@
+{
+  "name": "opencode-bash-timeout",
+  "version": "0.1.0",
+  "description": "Guarantee every foreground shell command is bounded: a 60s default timeout and a hard 30-minute cap for OpenCode's shell tool.",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "shell",
+    "bash",
+    "timeout",
+    "safety"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode/plugin": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "@types/bun": "latest"
+  }
+}
